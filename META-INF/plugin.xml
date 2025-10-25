@@ -1,0 +1,24 @@
+<!-- Plugin Configuration File. -->
+<idea-plugin>
+  <idea-version since-build="251" />
+  <change-notes><![CDATA[Initial version]]></change-notes>
+  <version>1.0-SNAPSHOT</version>
+  <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
+  <id>com.lshob.demos.pluginerrors</id>
+  <!-- Public plugin name should be written in Title Case. -->
+  <name>Pluginerrors</name>
+  <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
+  <vendor url="https://youtu.be/dQw4w9WgXcQ?si=Arz7QM0D7nPNRLIy">Rickroll</vendor>
+  <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager. -->
+  <description><![CDATA[Search for highlighted text on the Stack Overflow website.<br>
+        <em>use ctrl+\ and ctrl+t to search]]></description>
+  <!-- Product and plugin compatibility requirements. -->
+  <depends>com.intellij.modules.platform</depends>
+  <!-- Extension points defined by the plugin.-->
+  <extensions defaultExtensionNs="com.intellij" />
+  <actions>
+    <action id="pluginerror.SearchError" class="SearchError" text="Search Error" description="Search for highlighted text on the Stack Overflow website">
+      <keyboard-shortcut keymap="$default" first-keystroke="ctrl BACK_SLASH" second-keystroke="ctrl T" />
+    </action>
+  </actions>
+</idea-plugin>
